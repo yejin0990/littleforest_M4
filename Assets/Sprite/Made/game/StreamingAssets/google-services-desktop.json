@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "933981538305",
+    "firebase_url": "https://capstone-m4.firebaseio.com",
+    "project_id": "capstone-m4",
+    "storage_bucket": "capstone-m4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933981538305:android:0742158c4ee66d8cb09800",
+        "android_client_info": {
+          "package_name": "com.m4.LittleForest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933981538305-6jm0mtsnv26ggkkucunhfkrjv1pikcnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzN89lo9p012iCvb7_4qaisFXprSoW0cU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933981538305-6jm0mtsnv26ggkkucunhfkrjv1pikcnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

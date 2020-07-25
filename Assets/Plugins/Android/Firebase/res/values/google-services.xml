@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://capstone-m4.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">933981538305</string>
+  <string name="google_storage_bucket" translatable="false">capstone-m4.appspot.com</string>
+  <string name="project_id" translatable="false">capstone-m4</string>
+  <string name="google_api_key" translatable="false">AIzaSyDzN89lo9p012iCvb7_4qaisFXprSoW0cU</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDzN89lo9p012iCvb7_4qaisFXprSoW0cU</string>
+  <string name="google_app_id" translatable="false">1:933981538305:android:0742158c4ee66d8cb09800</string>
+  <string name="default_web_client_id" translatable="false">933981538305-6jm0mtsnv26ggkkucunhfkrjv1pikcnk.apps.googleusercontent.com</string>
+</resources>
