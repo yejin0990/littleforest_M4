@@ -37,8 +37,7 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ## 실행 화면
 
-![UI 사진](https://user-images.githubusercontent.com/56148289/88454743-9227cc80-ceac-11ea-95b4-9f5d539336ee.png)
-<img src="https://user-images.githubusercontent.com/56148289/88454743-9227cc80-ceac-11ea-95b4-9f5d539336ee.png"  width="50%" height="36%">
+<center><img src="https://user-images.githubusercontent.com/56148289/88454743-9227cc80-ceac-11ea-95b4-9f5d539336ee.png"  width="50%" height="36%"></center> 
 
 **1. 시작, 로딩**
 
