@@ -121,24 +121,6 @@ public class Talkmanager : MonoBehaviour, IPointerDownHandler
                 selectgroup.interactable = true;
             }
         }
-
-        /*
-        if (dialogueText.text.Equals("오늘 바깥세계의 일이 즐거우셨어양?"))
-        {
-            Buttonmanager.instance.popbutton2();
-            if (QuestID.healing > 0)
-            {
-                NextSentence();
-                healinggroup.alpha = 1;
-                healing.instance.PlayerHPbar();
-            }
-        }
-        if (dialogueText.text.Equals("초면에 실례일 수 있지만....\n혹시 지금 너의 기분을 표정으로 보여줄 수 있니?"))
-        {
-            Buttonmanager.instance.popbutton1();
-            if (QuestID.healing2 > 0) NextSentence();
-        }
-        */
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -155,7 +137,10 @@ public class Talkmanager : MonoBehaviour, IPointerDownHandler
         }
     }
 
-    /* 선택 버튼 -  힐링지수를 + 하던지 사진선택을 하던지 아이템을 선택하던지.... 알아서.... */
+    /*
+    선택 버튼 -  힐링지수를 + 하던지 사진선택을 하던지 아이템을 선택하던지
+        -> 각각 기능이 다르기 때문에 select id를 통해 구분!
+    */
 
     public void firstSelect()
     {
