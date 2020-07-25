@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+// character script들은 중복되는 것이 많아 코드 설명은 Lion 에
+
 public class Flog : MonoBehaviour
 {
     public int character_id = 6000;
@@ -11,7 +13,6 @@ public class Flog : MonoBehaviour
     Dictionary<int, string[]> selectData;
     public string[] NPCsentences;
     int questid;
-    //public CanvasGroup healinggroup;
     public PolygonCollider2D FlogCollider;
 
     public GameObject FlogObject;

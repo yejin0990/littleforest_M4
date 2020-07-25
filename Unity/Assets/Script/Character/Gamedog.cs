@@ -21,8 +21,6 @@ public class Gamedog : MonoBehaviour
     {
         talkData = new Dictionary<int, string[]>();
         talkData.Add(8000, new string[] { "도와주러 오셔쿤yo~ 나에게 맛춘법을 알려주면 됨니다~", "맛는 맛춘법을 select 해yo." });
-        /* 이 대화가 끝나면 게임이 시작하도록 하고 시풔..*/
-
 
     }
 

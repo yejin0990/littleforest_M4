@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+// character script들은 중복되는 것이 많아 코드 설명은 Lion 에
+
 public class Pig : MonoBehaviour
 {
     public int character_id = 5000;
@@ -11,7 +13,6 @@ public class Pig : MonoBehaviour
     Dictionary<int, string[]> selectData;
     public string[] NPCsentences;
     int questid;
-    //public CanvasGroup healinggroup;
     public PolygonCollider2D PigCollider;
 
     public GameObject PigObject;
@@ -73,15 +74,6 @@ public class Pig : MonoBehaviour
         }
 
         NPCsentences = talkData[character_id + questid];
-
-        /*
-        <힐링바>
-        if (questid > 30)
-        {
-            healinggroup.alpha = 1;
-            healing.instance.PlayerHPbar();
-        }
-        */
 
         if (StaticVal.Touchenable == 0) PigCollider.enabled = false;
         else if (StaticVal.Touchenable == 1) PigCollider.enabled = true;

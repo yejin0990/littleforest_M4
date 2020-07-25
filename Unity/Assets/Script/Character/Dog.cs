@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+// character script들은 중복되는 것이 많아 코드 설명은 Lion 에
+
 public class Dog : MonoBehaviour
 {
     public int character_id = 7000;
@@ -11,7 +13,6 @@ public class Dog : MonoBehaviour
     Dictionary<int, string[]> selectData;
     public string[] NPCsentences;
     int questid;
-    //public CanvasGroup healinggroup;
     public PolygonCollider2D DogCollider;
 
     public GameObject DogObject;

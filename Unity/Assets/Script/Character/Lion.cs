@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+/* 나머지 캐릭터 script들은 중복됨 */
+
 public class Lion : MonoBehaviour
 {
     public int character_id=1000;
-    Dictionary<int, string[]> talkData;
-    Dictionary<int, string[]> selectData;
+    Dictionary<int, string[]> talkData;     // 대사 data
+    Dictionary<int, string[]> selectData;   // 선택 대사 data
     public string[] NPCsentences;
     int questid;
-    //public CanvasGroup healinggroup;
     public PolygonCollider2D LionCollider;
 
     public GameObject LionObject;
@@ -63,6 +64,7 @@ public class Lion : MonoBehaviour
     
     void Update()
     {
+        // quest id에 따라 캐릭터의 quest id 정해주기
         if ((StaticVal.questID >= 0) && (StaticVal.questID < 200))
         {
             questid = StaticVal.questID;
@@ -77,16 +79,7 @@ public class Lion : MonoBehaviour
 
         NPCsentences = talkData[character_id + questid];
 
-
-        /*
-        <힐링바>
-        if (questid > 30)
-        {
-            healinggroup.alpha = 1;
-            healing.instance.PlayerHPbar();
-        }
-        */
-
+        // touchable 이 0 이면 다른 UI가 실행되고 있기 때문에 lion 클릭 방지
         if (StaticVal.Touchenable == 0) LionCollider.enabled = false;
         else if (StaticVal.Touchenable == 1) LionCollider.enabled = true;
 
@@ -102,6 +95,7 @@ public class Lion : MonoBehaviour
                 {
                     if (!EventSystem.current.IsPointerOverGameObject())
                     {
+                        // 대사 창의 icon 선택
                         lionicon.enabled = true;
                         Rabbiticon.enabled = false;
                         Sheepicon.enabled = false;
@@ -112,6 +106,7 @@ public class Lion : MonoBehaviour
                         isSelectsentences(character_id + questid);
                         Talkmanager.instance.Ondialogue(NPCsentences);
 
+                        // 클릭 후 퀘스트에 맞춰서 진행 ( qusetmanager )
                         if (questid == 0) Questmanager.instance.quest0End();
                         else if (questid == 110) Questmanager.instance.quest110End();
                         else if (questid == 130) Questmanager.instance.quest130End();

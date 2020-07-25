@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+// character script들은 중복되는 것이 많아 코드 설명은 Lion 에
+
 public class Sheep : MonoBehaviour
 {
     public int character_id = 2000;
@@ -11,7 +13,6 @@ public class Sheep : MonoBehaviour
     Dictionary<int, string[]> selectData;
     public string[] NPCsentences;
     int questid;
-    //public CanvasGroup healinggroup;
     public PolygonCollider2D SheepCollider;
 
     public GameObject SheepObject;
@@ -104,14 +105,6 @@ public class Sheep : MonoBehaviour
 
         NPCsentences = talkData[character_id + questid];
 
-        /*
-        <힐링바>
-        if (questid > 30)
-        {
-            healinggroup.alpha = 1;
-            healing.instance.PlayerHPbar();
-        }
-        */
 
         if (StaticVal.Touchenable == 0) SheepCollider.enabled = false;
         else if (StaticVal.Touchenable == 1) SheepCollider.enabled = true;
