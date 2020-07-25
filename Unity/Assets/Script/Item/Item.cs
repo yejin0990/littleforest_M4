@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public enum ItemType
+public enum ItemType    // 해당 아이템이 필요한 캐릭터 지정 위해
 {
-    Flog,  //장비
-    Dog,    //소모
-    Pig    //기타
+    Flog,
+    Dog,
+    Pig
 }
 
 [System.Serializable]
@@ -28,16 +28,4 @@ public class Item
         itemImage = _itemImage;
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

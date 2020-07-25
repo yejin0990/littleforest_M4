@@ -8,9 +8,9 @@ public class Inventory : MonoBehaviour
     public static Inventory instance;
     
     public List<Item> slots = new List<Item>(); // 인벤토리 아이템 리스트
-
     public List<int> founditems = new List<int>();
 
+    // inventory UI의 slot image를 교체하기 위해
     public Image slotImage1;
     public Image slotImage2;
     public Image slotImage3;
@@ -32,19 +32,7 @@ public class Inventory : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public int findItem(string itemName)    //itemName과 일치하는 이름을 가지면
+    public int findItem(string itemName)    // itemName과 일치하는 이름을 가지면
     {
         int i = 0;
         for (; i < slots.Count; i++)
@@ -57,7 +45,7 @@ public class Inventory : MonoBehaviour
         return 9;
     }
 
-    public void finditems(string itemName)
+    public void finditems(string itemName)  // 찾는 item이 여러개일 경우
     {
         founditems.Clear();
         founditems.RemoveRange(0, founditems.Count);
@@ -70,6 +58,8 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    /* item 사용 */
     public void useItem(int i)
     {
         slots.RemoveAt(i);
@@ -108,6 +98,7 @@ public class Inventory : MonoBehaviour
         slotImageChange();
     }
 
+    // 사용하거나 새로 item 이 들어올 때 image변경해줌
     public void slotImageChange()
     {
         for (int i = 1; i <= slots.Count; i++)
@@ -146,6 +137,9 @@ public class Inventory : MonoBehaviour
         }
         
     }
+
+
+    /* inventory의 slot에 item 추가 */
 
     public void slotsAdd(Item addSlots)
     {
