@@ -40,39 +40,39 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 ![UI 사진](https://user-images.githubusercontent.com/56148289/88454743-9227cc80-ceac-11ea-95b4-9f5d539336ee.png)
 
 
-1. 시작, 로딩
+**1. 시작, 로딩**
 
 ![1  시작, 로딩](https://user-images.githubusercontent.com/56148289/88453395-6bb06400-cea1-11ea-83bc-b296fddfa65e.png)
 
-2. 퀘스트
+**2. 퀘스트**
 
 ![2  퀘스트](https://user-images.githubusercontent.com/56148289/88453406-87b40580-cea1-11ea-837d-77177d9b8a8f.png)
 
-3. 힐링지수
+**3. 힐링지수**
 
 ![3  힐링지수](https://user-images.githubusercontent.com/56148289/88454663-1fb6ec80-ceac-11ea-8e4d-0d422d78777c.png)
 
-4. 사진 감정분석
+**4. 사진 감정분석**
 
 ![4  사진 감정분석](https://user-images.githubusercontent.com/56148289/88454687-3bba8e00-ceac-11ea-9616-306d369253b5.png)
 
-5. 음성텍스트 감정분석
+**5. 음성텍스트 감정분석**
 
 ![5  음성텍스트 감정분석](https://user-images.githubusercontent.com/56148289/88454707-4f65f480-ceac-11ea-9fa5-c67990272c09.png)
 
-6. 힐링 진단서
+**6. 힐링 진단서**
 
 ![6  힐링 진단서](https://user-images.githubusercontent.com/56148289/88454716-5c82e380-ceac-11ea-85d1-7a2d24c2cae0.png)
 
-7. 소식지
+**7. 소식지**
 
 ![7  소식지](https://user-images.githubusercontent.com/56148289/88454726-69073c00-ceac-11ea-8f62-812352316808.png)
 
-8. 아이템
+**8. 아이템**
 
 ![8  아이템](https://user-images.githubusercontent.com/56148289/88454730-715f7700-ceac-11ea-900e-835ae8ef7766.png)
 
-9. 미니게임
+**9. 미니게임**
 
 ![9  미니게임](https://user-images.githubusercontent.com/56148289/88454736-7e7c6600-ceac-11ea-9d91-81a8f8d4aae9.png)
 
