@@ -46,34 +46,47 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 ## 팀 소개
 ![형섭](https://user-images.githubusercontent.com/56148289/88451072-e459f500-ce8e-11ea-87cb-e58f4f0abadb.png)
 
-# º김형섭
+######º김형섭
+
 
 -팀장
+
 -201400273
+
 -gudtjq4302@naver.com
+
 -이미지, 음성, 문장 등의 감정 분석 모델링
 
 ![민정](https://user-images.githubusercontent.com/56148289/88451090-08b5d180-ce8f-11ea-85b2-87f5a24a8830.png)
 
-# º강민정
+######º강민정
+
 
 -201700255
+
 -minj00255@inu.ac.kr
+
 -퀘스트나 스토리 진행, 대화 · 상점 시스템 및 UI 제작, 힐링지수 계산
 
 
 ![예진](https://user-images.githubusercontent.com/56148289/88451087-005d9680-ce8f-11ea-88e9-3448c67bcbae.png)
 
-# º손예진
+######º손예진
+
 
 -201700272
+
 -Yj0990099@inu.ac.kr
+
 -게임내 디자인 및 UI 제작, 미니게임 제작, 게임 내 효과음 적용
 
 ![서현](https://user-images.githubusercontent.com/56148289/88451093-0ce1ef00-ce8f-11ea-9503-13914d3a7a25.png)
 
-# º윤소현
+######º윤소현
+
 
 -201700275
+
 -ysh0714@naver.com
+
 -안드로이드 환경 구축 및 개발, 사용자 데이터 저장 및 로드
