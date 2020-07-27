@@ -84,7 +84,22 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 ![9  미니게임](https://user-images.githubusercontent.com/56148289/88454736-7e7c6600-ceac-11ea-9d91-81a8f8d4aae9.png)
 
 ## Reference
+
+
 ## License
+
+
+## Unity Asset
+
+- 배경 : 2D Background Parallax Pack
+
+https://assetstore.unity.com/packages/2d/environments/2d-background-parallax-pack-53677
+
+- 캐릭터 : Jump Animals
+
+https://assetstore.unity.com/packages/2d/characters/jump-animals-54563
+
+
 ## 팀 M4 소개
 
 ![형섭](https://user-images.githubusercontent.com/56148289/88451072-e459f500-ce8e-11ea-87cb-e58f4f0abadb.png)
