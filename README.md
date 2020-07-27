@@ -85,7 +85,8 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ## Reference
 ## License
-## 팀 소개
+## 팀 M4 소개
+
 ![형섭](https://user-images.githubusercontent.com/56148289/88451072-e459f500-ce8e-11ea-87cb-e58f4f0abadb.png)
 
 **º 김형섭**
