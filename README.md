@@ -90,13 +90,9 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 
 ## Unity Asset
-
-- 배경 : 2D Background Parallax Pack
-
+- 배경 : 2D Background Parallax Pack 사용
 https://assetstore.unity.com/packages/2d/environments/2d-background-parallax-pack-53677
-
-- 캐릭터 : Jump Animals
-
+- 캐릭터 : Jump Animals 사용
 https://assetstore.unity.com/packages/2d/characters/jump-animals-54563
 
 
