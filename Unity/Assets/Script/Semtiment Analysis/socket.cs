@@ -49,7 +49,7 @@ public class socket : MonoBehaviour
         ipAd = externalip.ToString();
     }
 
-    // Take a shot immediately
+    // coroutine
     public void ImageServer_C()
     {
         StartCoroutine("StartgoC");
@@ -104,12 +104,7 @@ public class socket : MonoBehaviour
         // We should only read the screen buffer after rendering is complete
         yield return new WaitForEndOfFrame();
 
-        /*
-        //파일 읽기
-        string path = Application.persistentDataPath + "/ mnt / sdcard / Android / data / com.m4.LittleForest / files";
-        byte[] bytes = File.ReadAllBytes(path);
-        Debug.Log(bytes[0]);
-        */
+        
 
         byte[] bytes = nativecam.instance.bytes;
         

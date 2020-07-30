@@ -12,18 +12,9 @@ public class GalleryPickup : MonoBehaviour
     {
         instance = this;
     }
-        // Start is called before the first frame update
-    void Start()
-    {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
+    //갤러리에서 사진을 고르는 함수
     public void sajingolra()
     {
         if (NativeGallery.IsMediaPickerBusy())
@@ -31,44 +22,28 @@ public class GalleryPickup : MonoBehaviour
 
         PickImage(512);
     }
-
-	private void PickImage(int maxSize)
+    //NativeGallery 에셋-> https://github.com/yasirkula/UnityNativeGallery 지침활용
+    private void PickImage(int maxSize)
 	{
+        //안드로이드 갤러리접근
 		NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
 		{
 			Debug.Log("Image path: " + path);
 			if (path != null)
 			{
-				// Create Texture from selected image
+				// 선택된 이미지의 Texture 생성
 				Texture2D texture = NativeGallery.LoadImageAtPath(path, maxSize);
 				if (texture == null)
 				{
 					Debug.Log("Couldn't load texture from " + path);
 					return;
 				}
-
+                //texture를 byte로 변환
                 texture = duplicateTexture(texture);
                 bytes = texture.EncodeToPNG();
                 Debug.Log("GallyPickup   " + bytes[0]);
+                
 
-                /*
-				// Assign texture to a temporary quad and destroy it after 5 seconds
-				GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
-				quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
-				quad.transform.forward = Camera.main.transform.forward;
-				quad.transform.localScale = new Vector3(1f, texture.height / (float)texture.width, 1f);
-
-				Material material = quad.GetComponent<Renderer>().material;
-				if (!material.shader.isSupported) // happens when Standard shader is not included in the build
-					material.shader = Shader.Find("Legacy Shaders/Diffuse");
-
-				material.mainTexture = texture;
-
-				Destroy(quad, 5f);
-                */
-
-                // If a procedural texture is not destroyed manually, 
-                // it will only be freed after a scene change
                 Destroy(texture, 5f);
 
                 socket.instance.ImageServer_G();

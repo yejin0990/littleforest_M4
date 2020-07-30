@@ -15,48 +15,33 @@ public class nativecam : MonoBehaviour
     {
         instance = this;
 
+        //path 지정
         path = Application.persistentDataPath + "/ mnt / sdcard / Android / data / com.m4.LittleForest / files";
         if (!Directory.Exists(path))
         {
             Directory.CreateDirectory(path);
         }
     }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-
-
-    }
-
-
+    //카메라 여는 함수
     public void takepicture()
     {
-        // Don't attempt to use the camera if it is already open
         if (NativeCamera.IsCameraBusy())
             return;
         TakePicture(512);
 
     }
 
-
+    //Native Camera 에셋 -> https://github.com/yasirkula/UnityNativeCamera 지침 참조
     private void TakePicture(int maxSize)
     {
-
+        //안드로이드 카메라 권한
         NativeCamera.Permission permission = NativeCamera.TakePicture((PATH) =>
         {
             Debug.Log("Image path: " + PATH);
             if (PATH != null)
             {
-                // Create a Texture2D from the captured image
+                // 선택된 이미지의 Texture 생성
                 Texture2D texture = NativeCamera.LoadImageAtPath(PATH, maxSize);
                 if (texture == null)
                 {
@@ -64,37 +49,18 @@ public class nativecam : MonoBehaviour
                     return;
                 }
 
-                //image.sprite = Sprite.Create(texture, new Rect(0,0,texture.width, texture.height), new Vector2(0,0));
+                //texture를 byte로 변환
                 texture = duplicateTexture(texture);
                 bytes = texture.EncodeToPNG();
                 Debug.Log("nativecam   " + bytes[0]);
                 
-                //path에 저장!_!
+                //path에 저장
                 FileStream fs = new FileStream(path + "test.png", FileMode.Create, FileAccess.Write);
                 byte[] data = bytes;
                 fs.Write(data, 0, (int)data.Length);
                 Debug.Log("저장 완료");
                 fs.Close();
 
-                /*
-                // Assign texture to a temporary quad and destroy it after 5 seconds
-                GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
-                quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
-                quad.transform.forward = Camera.main.transform.forward;
-                quad.transform.localScale = new Vector3(1f, texture.height / (float)texture.width, 1f);
-
-
-                Material material = quad.GetComponent<Renderer>().material;
-                if (!material.shader.isSupported) // happens when Standard shader is not included in the build
-                    material.shader = Shader.Find("Legacy Shaders/Diffuse");
-
-                material.mainTexture = texture;
-
-                Destroy(quad, 5f);
-                */
-
-                // If a procedural texture is not destroyed manually, 
-                // it will only be freed after a scene change
                 Destroy(texture, 5f);
 
                 socket.instance.ImageServer_C();
