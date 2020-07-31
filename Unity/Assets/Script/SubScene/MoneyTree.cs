@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -6,7 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MoneyTree : MonoBehaviour
-{
+{ 
+    // 돈나무 클릭하면 1~5Coin이 랜덤으로 들어옴
     public GameObject CointreeObject;
     public AudioSource treeeffect;
     public static MoneyTree instance;
@@ -16,14 +17,14 @@ public class MoneyTree : MonoBehaviour
         treeeffect = GetComponent<AudioSource>();
         instance = this;
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         if(StaticVal.coinTree == 0)CointreeObject.SetActive(false);
         else CointreeObject.SetActive(true);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         /*
