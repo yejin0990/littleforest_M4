@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
+/*
+대나무 숲으로 이동
+*/
+
 public class bambooGO : MonoBehaviour
 {
     public BoxCollider2D bambooGOCollider;
@@ -18,13 +22,7 @@ public class bambooGO : MonoBehaviour
         instance = this;
         woodeffect = GetComponent<AudioSource>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if ((StaticVal.Touchenable == 1) && (StaticVal.Post_bamboo_Num > 1))

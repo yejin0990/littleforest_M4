@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/*
+우체통 object 클릭하면 편지 UI 뜨게 하기
+*/
+
 public class Postscript : MonoBehaviour
 {
     public BoxCollider2D PostCollider;
@@ -17,13 +21,7 @@ public class Postscript : MonoBehaviour
         instance = this;
         posteffect = GetComponent<AudioSource>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if ((StaticVal.Touchenable == 1)&&(StaticVal.Post_bamboo_Num >0))

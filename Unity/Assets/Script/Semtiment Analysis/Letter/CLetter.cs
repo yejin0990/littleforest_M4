@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 
+/*
+편지 UI
+쓰고싶은 글을 작성하면 서버에 글을 보내고 (socket script 참고)
+긍정/부정 결과에 따라 답장 띄우기
+*/
+
 public class CLetter : MonoBehaviour
 {
     public static CLetter instance;
@@ -22,6 +28,7 @@ public class CLetter : MonoBehaviour
 
     public AudioSource lettersound;
 
+    // 답장 data
     private void Awake()
     {
         lettersound = GetComponent<AudioSource>();
@@ -54,13 +61,6 @@ public class CLetter : MonoBehaviour
         letterOutputgroup.blocksRaycasts = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log(m_InputField.text);
-        //Debug.Log(m_Letter.text);
-    }
-
     public void Openbutton()
     {
         lettersound.Play();
@@ -70,31 +70,36 @@ public class CLetter : MonoBehaviour
         CLetterObject.SetActive(true);
     }
 
+    // 닫기 버튼
     public void Closebutton()
     {
+        // 편지 UI 관련 전부 비활성화
         lettersound.Play();
         Healing.instance.healingLetter();
         CLetterObject.SetActive(false);
-
         letterOutputgroup.alpha = 0;
         letterOutputgroup.interactable = false;
         letterOutputgroup.blocksRaycasts = false;
 
+        // 비활성화 시켜놨던 보내기 버튼 다시 활성화
         SendButtongroup.blocksRaycasts = true;
         SendButtongroup.interactable = true;
 
         m_InputField.text = "";
         m_Letter.text = " ";
 
+        // 퀘스트 진행을 위해
         if (StaticVal.questID == 400) StaticVal.questID += 10;
         StaticVal.Touchenable = 1;
     }
 
+    // 보내기 버튼
     public void Sendbutton()
     {
         lettersound.Play();
-        Debug.Log(m_Letter.text.ToString());
+        Debug.Log(m_Letter.text.ToString());    // text log에서 확인하기 위해
 
+        // 로컬에 작성한 글을 임시 저장한 후
         string fileName = "/mytextfile.txt";
         var sr = File.CreateText(Application.persistentDataPath + fileName);
         sr.WriteLine(m_Letter.text.ToString());
@@ -103,13 +108,14 @@ public class CLetter : MonoBehaviour
         SendButtongroup.blocksRaycasts = false;
         SendButtongroup.interactable = false;
 
+        // socket에서 저장된 글 server에 보냄
         socket.instance.TextServer();
     }
 
+    // 답장 가져오는 함수
     public void getLetter()
     {
         letterOutputtext.text = letterData[letterInt];
-
         letterOutputgroup.alpha = 1;
     }
 
