@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,13 +8,13 @@ using UnityEngine.UI;
 
 public class MiniGameEntry : MonoBehaviour
 {
+// 미니게임 초기화해주는 스크립트
     public GameObject MinigameObject;
     int doorcount = 0;   
 
-    // Start is called before the first frame update
     void Start()
     {
-        if (doorcount == 2)
+        if (doorcount == 2) // 하루에 미니게임 두번만
         {
             MinigameObject.GetComponent<BoxCollider>().enabled = false;
         }
@@ -23,7 +23,7 @@ public class MiniGameEntry : MonoBehaviour
     private void FixedUpdate()
     {
         int t = DateTime.Now.Hour;
-        if (t == 5)
+        if (t == 5) // 새벽 다섯시에 초기화
         {
             MinigameObject.GetComponent<BoxCollider>().enabled = true;
             doorcount = 0;
