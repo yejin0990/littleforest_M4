@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Question : MonoBehaviour
 {
+// 맞춤법 퀴즈(미니 게임)
     public GameObject questionText;
     public GameObject example1Text;
     public GameObject example2Text;
@@ -14,7 +15,7 @@ public class Question : MonoBehaviour
 
     public Text getCoin;
 
-    Dictionary<string, string>[] problems = {
+    Dictionary<string, string>[] problems = { // 문제지
         new Dictionary<string,string>(){
             {"question", "'빈털털이'와 '빈털터리' 어떤 것이 맞는 말입니까?"},
             {"answer", "빈털터리"},
@@ -80,8 +81,8 @@ public class Question : MonoBehaviour
     {
         gamesound = GetComponent<AudioSource>();
     }
-    // Start is called before the first frame update
-    void Start()
+
+    void Start() // 8문제 중 랜덤으로 문제 제출
     {
         problemNumber = Random.Range(0, 7);
         Problemsave.Add(problemNumber, i);
@@ -105,7 +106,6 @@ public class Question : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -129,7 +129,7 @@ public class Question : MonoBehaviour
         if (Problemsave.ContainsKey(problemNumber))
         {
             problemNumber = Random.Range(0, 7);
-            Problemsave.Add(problemNumber, i);
+            Problemsave.Add(problemNumber, i); // 중복 방지를 위해 나온 문제는 딕셔너리 안에 넣어줌
             ShowProblem();
         }
         else
@@ -161,7 +161,7 @@ public class Question : MonoBehaviour
         SceneManager.LoadScene("SubScene");
     }
 
-    public void Example1ButtonClicked()
+    public void Example1ButtonClicked() // buttoncount를 증가시켜 세문제만 풀 수 있도록 함
     {
         gamesound.Play();
         Debug.Log("Example1ButtonClicked");
