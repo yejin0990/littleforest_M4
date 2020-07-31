@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MiniGameEntry : MonoBehaviour
 {
 // 미니게임 초기화해주는 스크립트
+
     public GameObject MinigameObject;
     int doorcount = 0;   
 
