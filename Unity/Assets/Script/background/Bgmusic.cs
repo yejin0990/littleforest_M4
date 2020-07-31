@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Bgmusic : MonoBehaviour
 {
+// 배경음 중복 제어, 끄고 키는 코드
     public CanvasGroup bgmONgroup;
     public CanvasGroup bgmOFFgroup;
     public AudioSource AudioSource;
 
     public static Bgmusic instance = null;
 
-    void Awake()
+    void Awake() // 씬전환 할때마다 배경음이 중복 되는거 막음
     {
         if (instance == null)
         {
