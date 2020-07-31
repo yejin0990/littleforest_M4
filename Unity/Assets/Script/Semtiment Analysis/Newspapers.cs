@@ -1,10 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Newspapers : MonoBehaviour
 {
+// 사용자의 힐링 지수에 따라 영화, 음악을 추천해주고 유튜브로 보여줌 (Webopen script 참고)
     public Text WeatherT;
     public Text TemperatureT;
     public Text HealingT;
@@ -26,7 +27,7 @@ public class Newspapers : MonoBehaviour
     {
         instance = this;
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -34,7 +35,7 @@ public class Newspapers : MonoBehaviour
         newssound = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (StaticVal.newspaperOpenNum == 3)
@@ -61,7 +62,7 @@ public class Newspapers : MonoBehaviour
         StaticVal.Touchenable = 1;
     }
 
-    public void newspaperInit()
+    public void newspaperInit() // 현재 날씨와 사용자의 힐링 지수 상태 시각적으로 보여줌
     {
         TemperatureT.text = socket.instance.temperature + '℃' + '/';
         WeatherT.text = socket.instance.weatherState;
@@ -165,7 +166,7 @@ public class Newspapers : MonoBehaviour
         }
     }
 
-    public void likeBalladSong()
+    public void likeBalladSong() // WebOpen에 있는 딕셔너리 불러옴
     {
         if (Healing.de_healingVal > 0)
         {
