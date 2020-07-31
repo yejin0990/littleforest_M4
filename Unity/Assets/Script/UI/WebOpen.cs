@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class WebOpen : MonoBehaviour
 {
+//힐링 지수에 따라 추천하는 영화,음악 웹페이지 여는 스크립트 (newspaper script에서 사용)
     public static WebOpen instance;
 
     Dictionary<string, string> balladData_high;
