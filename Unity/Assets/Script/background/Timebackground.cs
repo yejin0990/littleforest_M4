@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,20 +13,18 @@ public class Timebackground : MonoBehaviour
 
     SpriteRenderer render;
 
-    // Start is called before the first frame update
     void Start()
     {
      
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() // 현재 시간을 계속 업데이트해서 시간대에 맞는 배경을 나오게함
     {
         int a = DateTime.Now.Hour;
 
