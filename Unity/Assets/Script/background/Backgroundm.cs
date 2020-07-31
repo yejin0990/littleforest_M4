@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Backgroundm : MonoBehaviour
 {
+// 배경음 제어 스크립트
     public CanvasGroup bgmONgroup;
     public CanvasGroup bgmOFFgroup;
     public AudioSource AudioSource;
