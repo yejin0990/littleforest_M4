@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,13 +6,11 @@ public class Exit : MonoBehaviour
 {
     public CanvasGroup Exitmenugroup;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -23,7 +21,7 @@ public class Exit : MonoBehaviour
         }
     }
 
-    public void ExitYes()
+    public void ExitYes() // 게임 나갈 때 데이터 저장
     {
         for (int i = 0; i < Inventory.instance.slots.Count; i++)
         {
