@@ -5,37 +5,10 @@ using UnityEngine.UI;
 
 public class loadData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void save()
-    {
-        for (int i = 0; i < Inventory.instance.slots.Count; i++)
-        {
-            PlayerPrefs.SetString("slots"+i,Inventory.instance.slots[i].itemName);
-        }
-        PlayerPrefs.SetInt("questID", StaticVal.questID);
-        PlayerPrefs.SetInt("playerCoin", StaticVal.playerCoin);
-        PlayerPrefs.SetFloat("healing_QuestionVal", Healing.healing_QuestionVal);
-        PlayerPrefs.SetFloat("healing_PictureVal", Healing.healing_PictureVal);
-        PlayerPrefs.SetFloat("healing_LetterVal", Healing.healing_LetterVal);
-        PlayerPrefs.SetFloat("healing_BambooVal", Healing.healing_BambooVal);
-        PlayerPrefs.SetFloat("de_healingVal", Healing.de_healingVal);
-
-        Debug.Log("success save");
-    }
-
+    //저장된 데이터 로드하는 함수
     public void load()
     {
+        //"slots"라는 이름의키를 가지고 있으면 저장된 데이터 로드
         if (PlayerPrefs.HasKey("slots"))
         {
             for (int i = 0; i < Inventory.instance.slots.Count; i++)

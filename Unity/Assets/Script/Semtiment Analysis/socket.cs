@@ -19,15 +19,22 @@ public class socket : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
+        //사진 감정분석 결과 대사
         talkData = new Dictionary<int, string[]>();
-
+        
+        //알수없음
         talkData.Add(10, new string[] { "너의 표정을 읽지 못하겠어...\n다시 제대로 사진찍을꺼면 한번 더 찾아와줘~!" });
+        //Happy
         talkData.Add(20, new string[] { "아하! 네 표정 알겠어! 지금 무척 행복한 표정이구나?!\n너가 기뻐하니까 나도 기분이 좋네" });
+        //Fear
         talkData.Add(30, new string[] { "뭐지...? 내가 잘못본건가...?\n지금 두려운 일이 있는거야?" });
+        //Sad
         talkData.Add(40, new string[] { "흠.. 내가 잘못본게 아니라면 너는 지금 슬프구나...\n슬프하지마 nonono~\n혼자가 아냐 nonono~" });
+        //Angry
         talkData.Add(50, new string[] { "화가 잔뜩 나있구나.. 오늘 무슨 일이 있던거야?\n화를 조금 가라앉히는 건 어떨까?" });
+        //Surprise
         talkData.Add(60, new string[] { "왜 놀랐어!! 놀랄 일이 뭐가 있다고..!" });
+        //여러사람
         talkData.Add(70, new string[] { "여러 명의 사람들이 있어서 \n너가 누군지 정확히 모르겠어...","너만 있는 사진이 좋아~\n다시 찍을 꺼면 다시 찾아와줘~!" });
         
         //select
@@ -98,7 +105,7 @@ public class socket : MonoBehaviour
     {
         yield return UploadWeather();
     }
-
+    //카메라 사진을 서버와 통신하여 감정분석
     IEnumerator UploadPNG()
     {
         // We should only read the screen buffer after rendering is complete
@@ -142,44 +149,16 @@ public class socket : MonoBehaviour
             isSelectsentences(talknum);
             Talkmanager.instance.Ondialogue(talkdata);
         }
-
-
-
-        /*
-        UnityWebRequest www = UnityWebRequest.Get("http://35.184.192.93:443/");
-        yield return www.SendWebRequest();
-        if (www.isNetworkError || www.isHttpError)
-        {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            // Show results as text
-            Debug.Log(www.downloadHandler.text);
-
-            // Or retrieve results as binary data
-            byte[] results = www.downloadHandler.data;
-
-            Debug.Log(results);
-
-        }
-        */
-
+        
     }
     
-
+    //갤러리선택 사진을 서버와 통신하여 감정분석
     IEnumerator UploadPNG1()
     {
         // We should only read the screen buffer after rendering is complete
         yield return new WaitForEndOfFrame();
 
-        /*
-        //파일 읽기
-        string path = Application.persistentDataPath + "/ mnt / sdcard / Android / data / com.m4.LittleForest / files";
-        byte[] bytes = File.ReadAllBytes(path);
-        Debug.Log(bytes[0]);
-        */
-
+       //갤러리에서 선택된 이미지 바이트로 변환
         byte[] bytes = GalleryPickup.instance.bytes;
 
 
@@ -218,7 +197,7 @@ public class socket : MonoBehaviour
         }
     }
 
-
+    //녹음된 파일을 서버와 통신하여 감정분석
         IEnumerator UploadWAV()
     {
         yield return new WaitForEndOfFrame();
@@ -254,7 +233,7 @@ public class socket : MonoBehaviour
             mike.instance.mikeOutput();
         }
     }
-    
+    //편지 텍스트를 서버와 통신하여 감정분석
     IEnumerator UploadTEXT()
     {
         string path = Application.persistentDataPath + "/mytextfile.txt";
@@ -280,7 +259,7 @@ public class socket : MonoBehaviour
             CLetter.instance.getLetter();
         }
     }
-
+    //위치정보를 서버와 통신하여 날씨받아오기
     IEnumerator UploadWeather()
     {
 
@@ -305,7 +284,7 @@ public class socket : MonoBehaviour
             howWeather(w.text);
         }
     }
-
+    //사진 감정분석 결과에 따라 힐링지수반영
     public int whichEmotion(string text)
     {
         bool happy = text.Contains("happy");
@@ -353,6 +332,7 @@ public class socket : MonoBehaviour
             return 10; }
     }
 
+    //텍스트 감정분석결과에 따라 힐링지수 반영
     public int whichLetterEmotion(string text)
     {
         char sp = '\n';
@@ -378,6 +358,7 @@ public class socket : MonoBehaviour
         }
     }
 
+    //음성 감정분석결과에 따라 힐링지수 반영
     public int whichMikeEmotion(string text)
     {
 
@@ -415,7 +396,7 @@ public class socket : MonoBehaviour
             return 0;
         }
     }
-
+    //날씨결과에 따라 날씨 이미지 변환
     public void howWeather(string text)
     {
         char sp = '\n';

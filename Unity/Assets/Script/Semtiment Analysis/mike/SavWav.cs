@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+//SavWav형식으로 녹음된 파일 변환
 public static class SavWav
 {
 
