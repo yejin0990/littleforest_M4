@@ -98,6 +98,10 @@ https://assetstore.unity.com/packages/2d/characters/jump-animals-54563
 https://www.youtube.com/watch?v=gamHHBHvnfw&t=79s
 - 날씨 아이콘 : 무료 배포 날씨 아이콘 사용, meta만 남기고 삭제하였습니다.
 
+- 카메라 : Native Camera 사용
+https://assetstore.unity.com/packages/tools/integration/native-camera-for-android-ios-117802?locale=ko-KR
+- 갤러리 : Native GAllery 사용
+https://assetstore.unity.com/packages/tools/integration/native-gallery-for-android-ios-112630?locale=ko-KR
 
 ## 팀 M4 소개
 
