@@ -88,15 +88,16 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ## License
 
+- 대화 말풍선 : 유튜브 비됴클래스 님 공유, meta만 남기고 삭제하였습니다.
+https://www.youtube.com/watch?v=gamHHBHvnfw&t=79s
+- 날씨 아이콘 : 무료 배포 날씨 아이콘 사용, meta만 남기고 삭제하였습니다.
+
 
 ## Unity Asset
 - 배경 : 2D Background Parallax Pack 사용
 https://assetstore.unity.com/packages/2d/environments/2d-background-parallax-pack-53677
 - 캐릭터 : Jump Animals 사용
 https://assetstore.unity.com/packages/2d/characters/jump-animals-54563
-- 대화 말풍선 : 유튜브 비됴클래스 님 공유, meta만 남기고 삭제하였습니다.
-https://www.youtube.com/watch?v=gamHHBHvnfw&t=79s
-- 날씨 아이콘 : 무료 배포 날씨 아이콘 사용, meta만 남기고 삭제하였습니다.
 
 - 카메라 : Native Camera 사용
 https://assetstore.unity.com/packages/tools/integration/native-camera-for-android-ios-117802?locale=ko-KR
