@@ -20,6 +20,7 @@
   <img src="https://img.shields.io/badge/GoogleCloud-gray?style=flat" alt="googlecloud"/>
 </div>
 
+</br>
 
 ## 실행 방법
 python3.6(64bit) 버전에서 pip을 사용하여 flask 프로젝트를 수행할 가상환경을 세팅해놓아야 한다.
@@ -41,17 +42,27 @@ flask server실행
 python3 flaskserver.py
 ```
 
+
+</br>
+
+
 ## 얼굴 인식 감정 분석 모델
  https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data  데이터를 사용
 
+
+</br>
 
 ## 음성 인식 감정 분석 모델
 https://github.com/MITESHPUTHRANNEU/Speech-Emotion-Analyzer 에서 Emtion_Voice_Detection_Model.h5, model.json 을 다운받아 실행파일 디렉토리에 둔다.
 
 
+</br>
+
 ## Unity Setting
 unity 폴더에 있는 폴더들을 다운받아 unity에 새 project를 생성하고 해당 파일들을 붙여넣고 실행을 시킨다.
 scene에 있는 start를 더블클릭 해서 실행한다.
+
+</br>
 
 ## 실행 화면
 
@@ -101,8 +112,13 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ![9  미니게임](https://user-images.githubusercontent.com/56148289/88454736-7e7c6600-ceac-11ea-9d91-81a8f8d4aae9.png)
 
+
+</br>
+
 ## Reference
 
+
+</br>
 
 ## License
 
@@ -111,6 +127,8 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 - 날씨 아이콘 : 무료 배포 날씨 아이콘 사용, meta만 남기고 삭제하였습니다.
 
+
+</br>
 
 ## Unity Asset
 - 배경 : 2D Background Parallax Pack 사용
@@ -123,6 +141,8 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 - 갤러리 : Native GAllery 사용
   - :arrow_forward: https://assetstore.unity.com/packages/tools/integration/native-gallery-for-android-ios-112630?locale=ko-KR
 
+
+</br>
 
 ## 팀 M4 소개
 
