@@ -1,10 +1,25 @@
-# littleforest
+<h1 align="center">
+  Little Forest
+</h1>
 
-## 프로젝트 소개
-본 프로젝트는 유니티를 통한 간단한 게임과 함께 사용자의 표정, 목소리, 텍스트를 통한 감정분석 결과와 행복지수 결과에 따라 힐링지수를 제공해주는 어플을 개발하는 것을 목표로 한다
+<div align="center">
+  <strong>사용자의 감정 분석을 토대로 진행되는 모바일 힐링 게임:seedling:</strong>
+  <p></p>
+  <p>
+    본 프로젝트는 유니티를 통한 간단한 게임과 함께 사용자의 표정, 목소리, 텍스트를 통한 감정분석 결과와 행복지수 결과에 따라 힐링지수를 제공해주는 어플을 개발하는 것을 목표로 한다</p>
+  </div>
+ <div align="center">
+  <img src="https://img.shields.io/badge/base-window10 x64-lightgray?style=flat" alt="android"/>
+  
+  <img src="https://img.shields.io/badge/platform-android-blue?style=flat" alt="android"/>
+  
+  <img src="https://img.shields.io/badge/unity-2019-green?style=flat" alt="unity"/>
+  
+  <img src="https://img.shields.io/badge/python-3.6-green?style=flat" alt="python"/>
+  
+  <img src="https://img.shields.io/badge/GoogleCloud-gray?style=flat" alt="googlecloud"/>
+</div>
 
-사용 환경
-window10 x64기반, python 3.6, Unity2019, GoogleCloud
 
 ## 실행 방법
 python3.6(64bit) 버전에서 pip을 사용하여 flask 프로젝트를 수행할 가상환경을 세팅해놓아야 한다.
