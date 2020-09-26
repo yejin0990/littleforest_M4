@@ -42,10 +42,13 @@ python3 flaskserver.py
 ```
 
 ## 얼굴 인식 감정 분석 모델
-https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data
-데이터를 사용
+ https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data  데이터를 사용
+
+
 ## 음성 인식 감정 분석 모델
 https://github.com/MITESHPUTHRANNEU/Speech-Emotion-Analyzer 에서 Emtion_Voice_Detection_Model.h5, model.json 을 다운받아 실행파일 디렉토리에 둔다.
+
+
 ## Unity Setting
 unity 폴더에 있는 폴더들을 다운받아 unity에 새 project를 생성하고 해당 파일들을 붙여넣고 실행을 시킨다.
 scene에 있는 start를 더블클릭 해서 실행한다.
@@ -104,61 +107,63 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 ## License
 
 - 대화 말풍선 : 유튜브 비됴클래스 님 공유, meta만 남기고 삭제하였습니다.
-https://www.youtube.com/watch?v=gamHHBHvnfw&t=79s
+  - :arrow_forward: https://www.youtube.com/watch?v=gamHHBHvnfw&t=79s
+
 - 날씨 아이콘 : 무료 배포 날씨 아이콘 사용, meta만 남기고 삭제하였습니다.
 
 
 ## Unity Asset
 - 배경 : 2D Background Parallax Pack 사용
-https://assetstore.unity.com/packages/2d/environments/2d-background-parallax-pack-53677
+  - :arrow_forward: https://assetstore.unity.com/packages/2d/environments/2d-background-parallax-pack-53677
 - 캐릭터 : Jump Animals 사용
-https://assetstore.unity.com/packages/2d/characters/jump-animals-54563
+  - :arrow_forward: https://assetstore.unity.com/packages/2d/characters/jump-animals-54563
 
 - 카메라 : Native Camera 사용
-https://assetstore.unity.com/packages/tools/integration/native-camera-for-android-ios-117802?locale=ko-KR
+  - :arrow_forward: https://assetstore.unity.com/packages/tools/integration/native-camera-for-android-ios-117802?locale=ko-KR
 - 갤러리 : Native GAllery 사용
-https://assetstore.unity.com/packages/tools/integration/native-gallery-for-android-ios-112630?locale=ko-KR
+  - :arrow_forward: https://assetstore.unity.com/packages/tools/integration/native-gallery-for-android-ios-112630?locale=ko-KR
+
 
 ## 팀 M4 소개
 
 ![형섭](https://user-images.githubusercontent.com/56148289/88451072-e459f500-ce8e-11ea-87cb-e58f4f0abadb.png)
 
-**º 김형섭**
+**:smiley: 김형섭**
 
 
--팀장
+- 팀장
 
--gudtjq4302@naver.com
+- gudtjq4302@naver.com
 
--이미지, 음성, 문장 등의 감정 분석 모델링
+- 이미지, 음성, 문장 등의 감정 분석 모델링
 
 ![민정](https://user-images.githubusercontent.com/56148289/88451090-08b5d180-ce8f-11ea-85b2-87f5a24a8830.png)
 
-**º 강민정**
+**:smiley: 강민정**
 
 
 
--minj2058@gmail.com
+- minj2058@gmail.com
 
--퀘스트나 스토리 진행, 대화 · 상점 시스템 및 UI 제작, 힐링지수 계산
+- 퀘스트나 스토리 진행, 대화 · 상점 시스템 및 UI 제작, 힐링지수 계산
 
 
 ![예진](https://user-images.githubusercontent.com/56148289/88451087-005d9680-ce8f-11ea-88e9-3448c67bcbae.png)
 
-**º 손예진**
+**:smiley: 손예진**
 
 
 
--Yj0990099@inu.ac.kr
+- Yj0990099@inu.ac.kr
 
--게임내 디자인 및 UI 제작, 미니게임 제작, 게임 내 효과음 적용
+- 게임내 디자인 및 UI 제작, 미니게임 제작, 게임 내 효과음 적용
 
 ![서현](https://user-images.githubusercontent.com/56148289/88451093-0ce1ef00-ce8f-11ea-9503-13914d3a7a25.png)
 
-**º 윤소현**
+**:smiley: 윤소현**
 
 
 
--ysh0714@naver.com
+- ysh0714@naver.com
 
--안드로이드 환경 구축 및 개발, 사용자 데이터 저장 및 로드
+- 안드로이드 환경 구축 및 개발, 사용자 데이터 저장 및 로드
