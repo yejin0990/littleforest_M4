@@ -2,13 +2,13 @@
   Little Forest
 </h1>
 
-<div align="center">
+<div>
   <strong>사용자의 감정 분석을 토대로 진행되는 모바일 힐링 게임:seedling:</strong>
   <p></p>
   <p>
     본 프로젝트는 유니티를 통한 간단한 게임과 함께 사용자의 표정, 목소리, 텍스트를 통한 감정분석 결과와 행복지수 결과에 따라 힐링지수를 제공해주는 어플을 개발하는 것을 목표로 한다</p>
   </div>
- <div align="center">
+ <div>
   <img src="https://img.shields.io/badge/base-window10 x64-lightgray?style=flat" alt="android"/>
   
   <img src="https://img.shields.io/badge/platform-android-blue?style=flat" alt="android"/>
@@ -128,7 +128,7 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ![형섭](https://user-images.githubusercontent.com/56148289/88451072-e459f500-ce8e-11ea-87cb-e58f4f0abadb.png)
 
-**:smiley: 김형섭**
+**:star2: 김형섭 :star2:**
 
 
 - 팀장
@@ -139,7 +139,7 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ![민정](https://user-images.githubusercontent.com/56148289/88451090-08b5d180-ce8f-11ea-85b2-87f5a24a8830.png)
 
-**:smiley: 강민정**
+**:star2: 강민정 :star2:**
 
 
 
@@ -150,7 +150,7 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ![예진](https://user-images.githubusercontent.com/56148289/88451087-005d9680-ce8f-11ea-88e9-3448c67bcbae.png)
 
-**:smiley: 손예진**
+**:star2: 손예진 :star2:**
 
 
 
@@ -160,7 +160,7 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 
 ![서현](https://user-images.githubusercontent.com/56148289/88451093-0ce1ef00-ce8f-11ea-9503-13914d3a7a25.png)
 
-**:smiley: 윤소현**
+**:star2: 윤소현 :star2:**
 
 
 
