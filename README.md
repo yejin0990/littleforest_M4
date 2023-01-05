@@ -152,6 +152,6 @@ scene에 있는 start를 더블클릭 해서 실행한다.
 **:star2: 김형섭 :star2:** | **:star2: 강민정 :star2:** | **:star2: 손예진 :star2:** | **:star2: 윤소현 :star2:**
 팀장 <br/> 이미지, 음성, 문장 등의 <br/> 감정 분석 모델링 | 퀘스트나 스토리 진행 <br/> 대화 · 상점 시스템 및 UI 제작 <br/> 힐링지수 계산 | 게임내 디자인 및 UI 제작 <br/> 미니게임 제작<br/> 게임 내 효과음 적용 | 안드로이드 환경 구축 및 개발 <br/> 사용자 데이터 저장 및 로드
 https://github.com/hyungsseop | https://github.com/Minjeong-K | https://github.com/yejin0990 | https://github.com/YoonSeohyeon
-gudtjq4302@naver.com | minj2058@gmail.com | Yj0990099@inu.ac.kr | ysh0714@naver.com
+gudtjq4302@naver.com | minj2058@gmail.com | o3oh30@gmail.com | ysh0714@naver.com
 
 
